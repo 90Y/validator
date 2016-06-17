@@ -16,6 +16,7 @@ class validator implements validInter
 
     public function verify(array $data)
     {
+        echo __FILE__;
         var_dump($data);
     }
 }
