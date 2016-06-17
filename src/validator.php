@@ -5,15 +5,17 @@
  */
 namespace epregboy\validator;
 
-class validator
+class validator implements validInter
 {
     protected $valid;
 
-    protected $data;
-
-    public function __construct($valid, $data)
+    public function __construct($valid)
     {
         $this->valid = $valid;
-        $this->data = $data;
+    }
+
+    public function verify(array $data)
+    {
+        var_dump($data);
     }
 }
